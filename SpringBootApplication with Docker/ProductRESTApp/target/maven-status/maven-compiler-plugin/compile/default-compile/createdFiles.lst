@@ -1,0 +1,4 @@
+com\cg\product\ProductRestAppApplication.class
+com\cg\product\repository\ProductRepository.class
+com\cg\product\controller\ProductController.class
+com\cg\product\model\Product.class
