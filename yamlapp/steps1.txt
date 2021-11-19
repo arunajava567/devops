@@ -1,0 +1,16 @@
+A deployment is responsible for keeping a set of pods running. 
+A service is responsible for enabling network access to a set of pods
+
+kubectl create -f deployment.yaml
+
+kubectl get deployment
+
+kubectl describe deployment webapp1
+
+kubectl create -f service.yaml
+
+kubectl run webapp1 --image=webapp1
+
+kubectl expose deployment webapp1
+
+minikube  service webapp1 --url

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcsapp1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tcsapp1
+  template:
+    metadata:
+      labels:
+        app: tcsapp1
+    spec:
+      containers:
+      - name: tcsapp1
+        image: katacoda/docker-http-server:latest
+        ports:
+        - containerPort: 88
